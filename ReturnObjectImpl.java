@@ -4,9 +4,14 @@ public class ReturnObjectImpl implements ReturnObject {
 	private ErrorMessage error;
 	private Object object;
 
+	ReturnObjectImpl() {
+		this.error = null;
+		this.hasError = false;
+		this.object = null;
+	}
+
 	/**
 	 * If we need to set an error this constructor will be called.
-	 * 
 	 * @param ErrorMessage err
 	 */
 	ReturnObjectImpl(ErrorMessage err) {
@@ -17,6 +22,7 @@ public class ReturnObjectImpl implements ReturnObject {
 	/**
 	 * If we need to set an object them this constructor will be called
 	 * to set the object property and set the hasError property to false.
+	 * @param Object object
 	 */
 	ReturnObjectImpl(Object object) {
 		this.object = object;

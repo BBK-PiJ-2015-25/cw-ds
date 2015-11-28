@@ -68,7 +68,7 @@ public class ArrayList implements List {
 
 			this.items[index] = object;
 
-			return new ReturnObjectImpl(object);
+			return new ReturnObjectImpl();
 		}
 	}
 
@@ -80,7 +80,7 @@ public class ArrayList implements List {
 			for (int i = 0; i < this.size; i++) {
 				if (this.items[i] == null) {
 					this.items[i] = object;
-					return this.get(i);
+					return new ReturnObjectImpl();
 				}
 			}
 

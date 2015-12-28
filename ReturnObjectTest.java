@@ -10,16 +10,16 @@ public class ReturnObjectTest {
 		System.out.println("Test");
 		System.out.println("--------------");
 
-		// ReturnObjectImpl item = new ReturnObjectImpl(ErrorMessage.EMPTY_STRUCTURE);
+		// ReturnObjectImpl item = new ReturnObjectImpl("hello");
 
-		ReturnObjectImpl item = new ReturnObjectImpl("hello");
-
-		// ReturnObjectImpl item = new ReturnObjectImpl(ErrorMessage.EMPTY_STRUCTURE);
+		ReturnObjectImpl item = new ReturnObjectImpl(ErrorMessage.EMPTY_STRUCTURE);
 
 
-		System.out.println(item.getError());
-		// System.out.println();
-		// System.out.println();
+		System.out.println("getError: " + item.getError());
+		System.out.println();
+		System.out.println("hasError: " + item.hasError());
+		System.out.println();
+		System.out.println("getReturnValue: " + item.getReturnValue());
 
 		System.out.println("--------------");
 		System.out.println("Test finished.");

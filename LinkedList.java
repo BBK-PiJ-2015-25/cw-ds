@@ -102,7 +102,7 @@ public class LinkedList implements List {
 				count++;
 			}
 
-			return new ReturnObjectImpl();
+			return new ReturnObjectImpl(null);
 		}
 	}
 
@@ -124,7 +124,7 @@ public class LinkedList implements List {
 				value.setNext(newListItem);
 			}
 
-			return new ReturnObjectImpl();
+			return new ReturnObjectImpl(null);
 		}
 	}
 }

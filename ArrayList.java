@@ -5,6 +5,14 @@ public class ArrayList implements List {
 	private Object[] items;
 	private int sizeOfArray;
 	private int maximumSizeOfArray;
+	private static final int DEFAULT_ARRAY_SIZE = 10;
+
+	ArrayList() {
+		int size 				= ArrayList.DEFAULT_ARRAY_SIZE;
+		this.items       		= new Object[size];
+		this.sizeOfArray 		= size;
+		this.maximumSizeOfArray = size;
+	}
 
 	ArrayList(int size) {
 		this.items       		= new Object[size];

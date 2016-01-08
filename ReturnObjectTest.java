@@ -1,9 +1,3 @@
-/**
- * Class to test my ReturnObjectImpl class.
- *
- * ----------------------
- * SKIP THIS WHEN MARKING
- */
 public class ReturnObjectTest {
 
 	public static void main(String[] args) {

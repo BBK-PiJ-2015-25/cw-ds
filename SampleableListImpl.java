@@ -15,8 +15,6 @@ public class SampleableListImpl extends LinkedList implements SampleableList {
 				if (!item.hasError()) {
 					list.add(item.getReturnValue());
 					i = i+2;
-				} else {
-					break;
 				}
 			}
 

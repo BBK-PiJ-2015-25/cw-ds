@@ -25,7 +25,7 @@ public class FunctionalArrayListTest {
 
 		System.out.println("-----------------");
 
-		System.out.println(list.head().getError());
+		System.out.println(list.head().getReturnValue());
 
 		System.out.println("-----------------");
 

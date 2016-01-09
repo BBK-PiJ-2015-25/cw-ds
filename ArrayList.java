@@ -53,7 +53,7 @@ public class ArrayList implements List {
 		if (index < 0 || index >= this.maximumSizeOfArray) {
 			return new ReturnObjectImpl(ErrorMessage.INDEX_OUT_OF_BOUNDS);
 		} else {
-			Object item = this.get(index);
+			ReturnObject item = this.get(index);
 			
 			for (int i = index; i < this.maximumSizeOfArray; i++) {
 				int targetIndex = i + 1;
@@ -64,7 +64,7 @@ public class ArrayList implements List {
 				}
 			}
 
-			return new ReturnObjectImpl(item);
+			return item;
 		}
 	}
 
